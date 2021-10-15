@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="jogo.js"></script>
+	<link rel="stylesheet" href="estilo.css">
+	<BGSOUND SRC="Som/Funny-Music-No-Copyright.wav" loop="-1">
+</head>
+</head>
+<body onresize="ajustaTamanhoPalcoJogo()">
+	<audio src="Som/Funny-Music-No-Copyright.wav" autoplay loop="-1"> Seu Browser não tem suporte para a tag audio.</audio>
+	
+	<div id="pai">
+		
+		<div id="painel">
+			<div id="vidas">
+			<img id="v1" src="imagens/coracao_cheio.png" alt="">
+			<img id="v2" src="imagens/coracao_cheio.png" alt="">
+			<img id="v3" src="imagens/coracao_cheio.png" alt="">
+		</div>
+
+			<div id="cronometro"></div>
+
+
+		</div>
+
+
+
+		
+		
+
+	</div>
+
+	<script>
+			
+			document.getElementById('cronometro').innerHTML = "Tempo Restante: "+tempo;
+
+			var criarMosca = setInterval(function(){
+
+
+				criarMosquito();
+
+			},tempoCriaMosquito)
+	</script>
+</body>
+</html>
